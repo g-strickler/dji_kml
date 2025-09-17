@@ -2,6 +2,7 @@ import csv
 
 csv_file_path = "./FlightRecords/CSVFile/Aug-24th-2025-04-42PM-Flight-Airdata.csv"
 kml_file_path = "dji_flight_path.kml"
+
 with open(csv_file_path, newline='', encoding='utf-8') as csvfile:
     reader = csv.reader(csvfile)
     headers = next(reader)
@@ -36,7 +37,7 @@ with open(csv_file_path, newline='', encoding='utf-8') as csvfile:
         <![CDATA[This is the path of the flight from the start to end.]]>
       </description>
       <LineString>
-        <altitudeMode>relativeToGround</altitudeMode>
+        <altitudeMode>relativeToMeanSeaLevel</altitudeMode>
         <coordinates>
           {" ".join(coordinates)}  <!-- Coordinates separated by space -->
         </coordinates>
