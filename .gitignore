@@ -1,12 +1,13 @@
 # Ignore everything
 *
 
-# Allow this .gitignore file (so it stays in the repo)
+# Allow this .gitignore file to be tracked
 !.gitignore
 
-# Allow a specific folder
+# Allow all Python files in the root
+!*.py
+
+# Allow the FlightRecords folder and its contents
 !FlightRecords/
 !FlightRecords/**
 
-# Allow a specific file
-!dji_fr_kml.py
