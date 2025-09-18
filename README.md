@@ -1,19 +1,26 @@
-The dji_kml repository is designed such that it will take any dji flight log in a csv file, and convert that flight log into a kml file that can be uploaded to 
-google earth. The purpose of this right now is to show that the flight path can be visually displayed in a way that is easy to understand. 
+# dji_kml
 
-To convert the csv to kml and visualize the data->
-    1. download the repository
-    2. run the program
-    3. when aske to insert a relative path make sure you insert a relative path to a csv dji flight log
-    4. open up https://earth.google.com/web/
-    5. click "new", followed by "import KML file to map project"
-    6. select the file that was created by the .py program. The name should be "dji_flight_path.kml"
-    7. once imported you will see a top down view of the flight path, you can click switch between 3D and 2D in the bottom right
-        corner. This will allow you to see elevation changes during the flight path
+The **dji_kml** repository is designed to take any DJI flight log in a CSV file and convert that flight log into a KML file that can be uploaded to Google Earth. The purpose of this project is to visually display the flight path in a clear and easy-to-understand way.
 
-Notes: There are 4 different colors that display on the flight path. They split the flight into four equal sections based on time of flight. From takeoff
-    to landing the colors are as follows
-        ->Blue
-        ->Cyan
-        ->Green
-        ->Yellow
+---
+
+## How to Convert CSV to KML and Visualize the Data
+
+1. Download the repository.
+2. Run the program.
+3. When asked to insert a relative path, make sure you provide the relative path to a DJI CSV flight log.
+4. Open [Google Earth Web](https://earth.google.com/web/).
+5. Click **New**, then select **Import KML file to map project**.
+6. Select the file created by the Python program. The filename should be `dji_flight_path.kml`.
+7. Once imported, you will see a top-down view of the flight path. You can switch between **3D** and **2D** views in the bottom right corner to see elevation changes during the flight.
+
+---
+
+## Notes
+
+The flight path is color-coded into **four equal sections** based on the time of flight, from takeoff to landing. The colors represent these sections as follows:
+
+- **Blue**
+- **Cyan**
+- **Green**
+- **Yellow**
