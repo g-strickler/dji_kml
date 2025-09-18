@@ -1,7 +1,10 @@
-# Allow the .gitignore file itself
+# Ignore everything
+*
+
+# Allow this .gitignore file (so it stays in the repo)
 !.gitignore
 
-# Allow a specific folder and its contents
+# Allow a specific folder
 !FlightRecords/
 !FlightRecords/**
 
