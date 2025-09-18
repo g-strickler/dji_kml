@@ -4,6 +4,9 @@
 # Allow this .gitignore file to be tracked
 !.gitignore
 
+# Allow the README file to be tracked
+!README.md
+
 # Allow all Python files in the root
 !*.py
 
